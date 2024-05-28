@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -37,12 +38,14 @@ public class ClassPathUpdater {
      *
      * @param paths paths to add at Classpath
      */
-    public static void add(List<String> paths)
+    public static List<Class> add(List<String> paths, ClassLoader classLoader)
             throws IOException, NoSuchMethodException, IllegalAccessException,
-            InvocationTargetException {
+            InvocationTargetException, ClassNotFoundException {
+        List<Class> loadedClass = new ArrayList<>();
         for (String path : paths) {
-            add(new File(path + File.separator));
+            loadedClass.addAll(add(new File(path + File.separator), null, classLoader));
         }
+        return loadedClass;
     }
 
     /**
@@ -51,40 +54,59 @@ public class ClassPathUpdater {
      * to add to the classpath. If the given string represents a directory,
      * then the directory it represents is added.
      *
-     * @param f The directory (or enclosing directory if a file) to add to the
-     * classpath.
+     * @param direcotory The directory (or enclosing directory if a file) to add to the
+     *                   classpath.
+     * @param pakage
      */
-    public static void add( File f )
+    public static List<Class> add(File direcotory, File pakage, ClassLoader classLoader)
             throws IOException, NoSuchMethodException, IllegalAccessException,
-            InvocationTargetException {
+            InvocationTargetException, ClassNotFoundException {
+        List<Class> loadedClasses = new ArrayList<>();
 
-
-
-        FileFilter classFilter = new FileFilter() {
-            @Override
-            public boolean accept(File pathname) {
-                return pathname.getName().endsWith(".class");
-            }
-        };
-        File[] files = f.listFiles(classFilter);
-        assert files != null;
-        for (File file : files){
-            try {
-                add1(file, f);
-            } catch (ClassNotFoundException e) {
-                System.out.println("ERROR");
-            }
+        if(pakage == null){
+            pakage = direcotory;
         }
 
+        File[] packages = pakage.listFiles(new FileFilter() {
+            @Override
+            public boolean accept(File pathname) {
+                return pathname.isDirectory();
+            }
+        });
 
+        for (File pkg: packages){
+            File[] classes = pkg.listFiles(new FileFilter() {
+                @Override
+                public boolean accept(File pathname) {
+                    return pathname.toString().endsWith(".class");
+                }
+            });
 
-       /* File file;
-        file = f.isDirectory() ? f : f.getParentFile();
-        try {
-            add(file.toURI().toURL());
-        } catch (ClassNotFoundException e) {
-            System.out.println("ERROR");
-        }*/
+            for(File clazz : classes){
+                String className = "";
+
+                if(!pakage.getAbsolutePath().equals(direcotory.getAbsolutePath())){
+                    className = pakage.getAbsolutePath().replace(direcotory.getAbsolutePath(), "").concat(".");
+                    if(className.startsWith(File.separator)){
+                        className = className.replace(File.separator, "");
+                    }
+
+                }
+
+                className = className.concat(pkg.getName());
+                className = className.concat(".").concat(clazz.getName().replace(".class", ""));
+                className = className.replace(File.separator, ".");
+                Class loadedClass = add1(className, direcotory, classLoader);
+                if (loadedClass != null){
+                    loadedClasses.add(loadedClass);
+                }
+            }
+
+            loadedClasses.addAll(add(direcotory, pkg, classLoader));
+
+        }
+        return loadedClasses;
+
     }
 
     /**
@@ -93,20 +115,21 @@ public class ClassPathUpdater {
      *
      * @param f The path to include when searching the classpath.
      */
-    public static void add1( File f, File directory)
+    public static Class add1( String className, File directory, ClassLoader classLoader)
             throws NoSuchMethodException, IllegalAccessException,
             InvocationTargetException, ClassNotFoundException, MalformedURLException {
         //Method method = CLASS_LOADER.getDeclaredMethod( "addURL", PARAMETERS );
         //method.setAccessible( true );
         //method.invoke( getClassLoader(), url);
+        try {
+            // Creating an instance of URLClassloader using the above URL and parent classloader
+            ClassLoader loader = URLClassLoader.newInstance(new URL[]{directory.toURI().toURL()}, classLoader);
+           return loader.loadClass(className);
+        }catch (ClassNotFoundException | NoClassDefFoundError e){
+           System.out.println("Impossible to load class:" + className);
+        }
 
-        // Creating an instance of URLClassloader using the above URL and parent classloader
-        File f1 = new File( "/Users/ncdaam/IdeaProjects/demo1/out/production/demo1");
-        ClassLoader loader = URLClassLoader.newInstance(new URL[]{f1.toURI().toURL()}, ClassPathUpdater.class.getClassLoader());
-        loader.loadClass(f.getName().replace(".class", ""));
-
-
-
+        return null;
 
 
     }

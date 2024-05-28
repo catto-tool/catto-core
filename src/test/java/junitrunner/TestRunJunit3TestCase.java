@@ -40,7 +40,7 @@ public class TestRunJunit3TestCase {
     }
 
     @Test
-    public void runJunit3PassTest() throws NoSuchMethodException, IOException, IllegalAccessException, InvocationTargetException {
+    public void runJunit3PassTest() throws NoSuchMethodException, IOException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
 
 
         when(sootMethodMock.getName()).thenReturn("testPass");
@@ -53,7 +53,7 @@ public class TestRunJunit3TestCase {
     }
 
     @Test
-    public void runJunit3FailTest() throws NoSuchMethodException, IOException, IllegalAccessException, InvocationTargetException {
+    public void runJunit3FailTest() throws NoSuchMethodException, IOException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
 
 
         when(sootMethodMock.getName()).thenReturn("testFail");

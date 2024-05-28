@@ -6,6 +6,8 @@ import CATTO.code.analyzer.CodeAnalyzer;
 import CATTO.config.ConfigWrapper;
 import CATTO.config.Configurator;
 import CATTO.test.runner.Runner;
+
+import com.sun.tools.attach.VirtualMachine;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.log4j.BasicConfigurator;
@@ -27,9 +29,10 @@ import java.util.Set;
 
 public class Main {
 
-    public static void main (String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+    public static void main (String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, ClassNotFoundException {
         //no error
         int exit_code = 0;
+
 
         BasicConfigurator.configure();
 

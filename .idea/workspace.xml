@@ -4,937 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d028869a-dbf3-4443-af86-5a00eaf6dce0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.css/coverage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/whatTest.xml" beforeDir="false" />
+    <list default="true" id="13b9ea1e-9233-4f0a-be9f-0d18ae6cdd6a" name="Changes" comment="trying to migrate to java 18.">
+      <change afterPath="$PROJECT_DIR$/whatTestProjectForTesting/out/production/p/sootTest/RealCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatTestProjectForTesting/out/production/p1/sootTest/RealCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatTestProjectForTesting/out/test/p/RealCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whatTestProjectForTesting/out/test/p1/RealCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_jasmin_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_java_cup_0_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ca_mcgill_sable_polyglot_2006.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_1_android.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_upb_cs_swt_axml_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_upb_cs_swt_heros_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_4_0_b180725_0427.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_beta_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_functionaljava_functionaljava_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_4_0_b180830_0438.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_4_0_b180830_0438.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom2_2_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_junit5_api_5_0_0_ALPHA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_junit5_engine_5_0_0_ALPHA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_junit_commons_5_0_0_ALPHA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_junit_engine_api_5_0_0_ALPHA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_6_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_6_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_2_0_2_beta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_smali_dexlib2_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonarsource_scanner_api_sonar_scanner_api_2_14_0_2002.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonarsource_scanner_maven_sonar_maven_plugin_3_7_0_1746.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_soot_oss_soot_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_4d_b4_min.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_cli_commons_cli_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_junit_3_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_easymock_easymock_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_all_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_jdom_jdom2_2_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_api_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_api_5_0_0_M2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_api_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_engine_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_engine_5_2_0_M1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_engine_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_platform_junit_platform_launcher_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_junit_vintage_junit_vintage_engine_5_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_all_2_0_2_beta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_core_2_2_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_pitest_pitest_1_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_pitest_pitest_1_4_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_pitest_pitest_command_line_1_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_pitest_pitest_entry_1_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_pitest_pitest_junit5_plugin_0_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_pitest_pitest_junit5_plugin_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_slf4j_slf4j_simple_1_7_5.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_22,_19_46_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_05_22__19_46__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_22,_18_05_[Changes]/CommonsBeanUtilsWithLibrary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_22,_18_05_[Changes]/TestSelectorJUnit4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_22,_18_05_[Changes]/Uncommitted_changes_before_Checkout_at_13_05_22,_18_05_[Changes].plantuml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_22,_18_05_[Changes]/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_22,_18_05_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_05_22__18_05__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.img/arrowDown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.img/arrowUp.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/.sonar_lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/analysis.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/issues-12.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-10.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-11.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-12.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-13.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-14.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-15.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-16.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-17.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-18.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-19.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-2.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-20.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-21.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-22.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-23.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-24.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-25.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-26.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-27.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-28.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-29.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-30.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-31.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-32.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-33.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-34.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-35.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-36.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-37.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-38.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-39.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-4.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-40.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-41.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-42.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-43.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-44.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-45.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-46.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-47.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-5.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-6.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-7.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-8.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/measures-9.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-10.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-11.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-12.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-13.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-14.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-15.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-16.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-17.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-18.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-19.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-2.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-20.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-21.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-22.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-23.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-24.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-25.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-26.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-27.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-28.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-29.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-30.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-31.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-32.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-33.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-34.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-35.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-36.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-37.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-38.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-39.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-4.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-40.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-41.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-42.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-43.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-44.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-45.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-46.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-47.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-5.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-6.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-7.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-8.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/symbols-9.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-10.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-11.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-12.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-13.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-14.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-15.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-16.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-17.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-18.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-19.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-2.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-20.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-21.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-22.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-23.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-24.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-25.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-26.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-27.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-28.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-29.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-30.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-31.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-32.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-33.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-34.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-35.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-36.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-37.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-38.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-39.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-4.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-40.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-41.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-42.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-43.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-44.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-45.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-46.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-47.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-5.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-6.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-7.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-8.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.scannerwork/scanner-report/syntax-highlightings-9.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sonar/.sonar_lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sonar/report-task.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JUnit4Test/JUnit4Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JUnit4Test/JUnit4Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RTA-commons-beanutils.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RTA-commons-codec_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RTA-commons-codec_old.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test Results - All_in_TestSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test Results - CommonsConfiguration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSelector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CATTO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-Spring-context-withoutLibrary.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-closure-compiler-withoutLibrary.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-commons-beanutils-withoutLibrary.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-commons-beanutils.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-jFreeChart-withoutLibrary.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-jFreeChart.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-jGap-withoutLibrary.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-jGap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-logback-withoutLibrary.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA-logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analisi senza ultime modifiche/RTA_notInOrder.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/.classes/Runner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/JUnitRunner/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/.classes/Main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.main/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/.classes/NewProject.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/.classes/PreviousProject.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/.classes/Project.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/.classes/SootMethodMoved.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.project/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/.classes/XMLReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.reportFromTesting/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/.classes/FromTheBottom.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/.classes/Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.testSelector/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/.classes/ClassPathUpdater.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/.classes/Util.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testSelector.util/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/.classes/NoNameException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/.classes/NoPathException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/.classes/NoTestFoundedException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_BLOCK.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_BLOCK_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_CLASS.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_CLASS_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_LINE.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_LINE_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_METHOD.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_METHOD_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testselector.exception/index_SORT_BY_NAME_DESC.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140401/com.company/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140401/com.company/Main.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140401/com.company/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140401/com.company/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140401/com.company/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140401/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140401/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140402/com.company/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140402/com.company/Main.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140402/com.company/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140402/com.company/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140402/com.company/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140402/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140402/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140403/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140404/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140405/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140407/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140409/com.company/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140409/com.company/Main.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140409/com.company/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140409/com.company/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140409/com.company/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140409/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201809140409/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241253/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241254/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241300/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241359/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241408/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/default/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241412/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241414/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/default/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241415/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/default/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241419/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testselector/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241422/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241423/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testselector/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241459/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testselector/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241500/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testselector/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241504/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241513/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testselector/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testselector/TestSelector.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241514/testselector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241708/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241714/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241716/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/default/TestSelectorJUnit4.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241720/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241725/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241726/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241726/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241727/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241728/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910241728/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242215/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/default/TestSelectorJUnit4.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910242216/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250108/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/default/TestSelectorJUnit4.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250109/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/default/TestSelectorJUnit4.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250158/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/default/TestSelectorJUnit4.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/default/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910250225/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251833/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251837/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251841/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251841/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251841/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251841/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251841/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251851/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251851/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251851/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251851/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251851/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251856/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251857/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251858/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251858/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251858/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251858/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251858/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251903/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251903/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251903/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251903/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251903/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251910/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251911/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251912/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251912/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251912/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251912/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251918/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251918/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251918/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251918/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251925/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251931/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251931/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251931/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251931/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251931/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251945/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251945/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251945/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251945/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910251945/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252003/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252017/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252017/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252017/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252017/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252017/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252024/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252024/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252024/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252024/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252024/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252035/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/scenaries/ExampleTestJUnit3.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/scenaries/ExampleTestJUnit4.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/scenaries/ExampleTestJunit5.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/scenaries/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/test/TestRunJunit3TestCase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/test/TestSelectorJUnit4.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252038/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910252048/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910260217/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262036/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910262046/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910271708/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.project/SootMethodMoved.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910280115/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.project/PreviousProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.project/SootMethodMoved.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910281852/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.project/SootMethodMoved.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282121/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.project/SootMethodMoved.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldReport/201910282140/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/option/OptionParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/option/OptionParsertEST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/whatTest/whatTest.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JUnit4Test/test/TestRunJunit3TestCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JUnit4Test/test/TestRunJunit5TestCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JUnit4Test/test/TestSelectorJUnit4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/JUnit4Test/test/TestTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pit-history" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.project/NewProject.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.project/Project.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.project/SootMethodMoved.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.reportFromTesting/XMLReport.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.reportFromTesting/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.testSelector/FromTheBottom.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.testSelector/Test.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.testSelector/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.util/ClassPathUpdater.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.util/Util.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/201910291454/testSelector.util/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CATTO/config/Configurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CATTO/config/Configurator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CATTO/project/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CATTO/project/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CATTO/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CATTO/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CATTO/test/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CATTO/test/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CATTO/util/ClassPathUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CATTO/util/ClassPathUpdater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/code/analyzer/CodeAnalyzer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/config/ConfigWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/config/Configurator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/exception/InvalidTargetPaths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/exception/NoNameException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/exception/NoPathException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/exception/NoTestFoundedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/project/NewProject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/project/PreviousProject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/project/Project.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/project/SootMethodMoved.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/reportfromtesting/XMLReport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/test/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/test/runner/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/test/selector/TestSelector$Analyzer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/test/selector/TestSelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/util/ClassPathUpdater.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/util/JunitUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/util/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lo4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/whatTests-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/junitrunner/TestRunJunit3TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/junitrunner/TestRunJunit3TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CATTO/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/test/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CATTO/test/runner/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/util/ClassPathUpdater$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CATTO/util/ClassPathUpdater$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CATTO/util/ClassPathUpdater.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CATTO/util/ClassPathUpdater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junitrunner/TestRunJunit3TestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/junitrunner/TestRunJunit3TestCase.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -964,6 +65,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/ncdaam/IdeaProjects/CATTO/whatTestProjectForTesting/out/test/p1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -974,6 +76,11 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/whatTestProjectForTesting/out/test/p1" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean compile assembly:single install" />
@@ -981,10 +88,12 @@
       <command value="mvn clean compile assembly:single install -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.jar">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="CATTO.main.Main" />
-      <module name="CATTO" />
+      <module name="whatTests" />
       <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../demo1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1009,19 +118,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JAR Application.jar" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d028869a-dbf3-4443-af86-5a00eaf6dce0" name="Changes" comment="" />
+      <changelist id="13b9ea1e-9233-4f0a-be9f-0d18ae6cdd6a" name="Changes" comment="trying to migrate to java 18." />
       <created>1655739095902</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655739095902</updated>
       <workItem from="1655739097032" duration="17536000" />
+      <workItem from="1716892153098" duration="1568000" />
     </task>
     <servers />
   </component>
@@ -1043,39 +153,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <condition expression="name.equals(&quot;main.test.HelloWorldTest&quot;)" language="JAVA" />
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
-          <line>520</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
-          <line>569</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
-          <line>567</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar:///Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java</url>
           <line>636</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java</url>
-          <line>638</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/main/java/CATTO/test/runner/Runner.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="136" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
-          <line>564</line>
-          <properties class="java.lang.ClassLoader" method="loadClass">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="18" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CATTO/test/runner/Runner.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="138" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
