@@ -8,19 +8,27 @@ import java.util.Objects;
 import java.util.Optional;
 
 public final class AnalysisRequest {
-    private final Path previousClassesPath;
+    private final List<Path> previousClassesPaths;
     private final List<Path> newClassesPaths;
     private final List<Path> dependencies;
     private final Path callGraphCacheDirectory;
 
     private AnalysisRequest(Builder builder) {
-        this.previousClassesPath = Objects.requireNonNull(builder.previousClassesPath, "previousClassesPath");
+        if (builder.previousClassesPaths.isEmpty()) {
+            throw new IllegalArgumentException("at least one previousClassesPath required");
+        }
+        this.previousClassesPaths = Collections.unmodifiableList(new ArrayList<>(builder.previousClassesPaths));
         this.newClassesPaths = Collections.unmodifiableList(new ArrayList<>(builder.newClassesPaths));
         this.dependencies = Collections.unmodifiableList(new ArrayList<>(builder.dependencies));
         this.callGraphCacheDirectory = builder.callGraphCacheDirectory;
     }
 
-    public Path previousClassesPath() { return previousClassesPath; }
+    /** Returns all previous-version class directories (one per module in multi-module projects). */
+    public List<Path> previousClassesPaths() { return previousClassesPaths; }
+
+    /** Convenience accessor for single-module use — returns the first previous path. */
+    public Path previousClassesPath() { return previousClassesPaths.get(0); }
+
     public List<Path> newClassesPaths() { return newClassesPaths; }
     public List<Path> dependencies() { return dependencies; }
     public Optional<Path> callGraphCacheDirectory() { return Optional.ofNullable(callGraphCacheDirectory); }
@@ -28,15 +36,23 @@ public final class AnalysisRequest {
     public static Builder builder() { return new Builder(); }
 
     public static final class Builder {
-        private Path previousClassesPath;
+        private final List<Path> previousClassesPaths = new ArrayList<>();
         private final List<Path> newClassesPaths = new ArrayList<>();
         private final List<Path> dependencies = new ArrayList<>();
         private Path callGraphCacheDirectory;
 
         private Builder() {}
 
+        /** Sets a single previous classes directory (single-module convenience). */
         public Builder previousClassesPath(Path path) {
-            this.previousClassesPath = path;
+            this.previousClassesPaths.clear();
+            this.previousClassesPaths.add(path);
+            return this;
+        }
+
+        /** Adds a previous classes directory — use multiple times for multi-module projects. */
+        public Builder addPreviousClassesPath(Path path) {
+            this.previousClassesPaths.add(path);
             return this;
         }
 

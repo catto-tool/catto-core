@@ -35,7 +35,7 @@ public final class CattoAnalyzer {
 
         String[] dependencyArray = toStringArray(request.dependencies());
         String[] newClassesArray = toStringArray(request.newClassesPaths());
-        String previousClassesPath = request.previousClassesPath().toString();
+        String[] previousClassesArray = toStringArray(request.previousClassesPaths());
 
         String newFingerprint = StructuralFingerprintComputer.computeProjectFingerprint(request.newClassesPaths());
 
@@ -49,7 +49,7 @@ public final class CattoAnalyzer {
                 Optional<CallGraph> cachedGraph = CallGraphCacheStore.loadCallGraph(cacheDir.get());
                 if (cachedGraph.isPresent()) {
                     LOGGER.info("Call graph cache hit — skipping Spark RTA");
-                    PreviousProject previous = new PreviousProject(dependencyArray, previousClassesPath);
+                    PreviousProject previous = new PreviousProject(dependencyArray, previousClassesArray);
                     current = new NewProject(dependencyArray, cachedGraph.get(), newClassesArray);
                     cacheUsed = true;
                     return runAnalysis(request, previous, current, cacheUsed, cacheDir, newFingerprint);
@@ -57,7 +57,7 @@ public final class CattoAnalyzer {
             }
         }
 
-        PreviousProject previous = new PreviousProject(dependencyArray, previousClassesPath);
+        PreviousProject previous = new PreviousProject(dependencyArray, previousClassesArray);
         current = new NewProject(dependencyArray, newClassesArray);
 
         if (cacheDir.isPresent()) {
