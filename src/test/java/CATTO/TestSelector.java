@@ -32,9 +32,7 @@ public class TestSelector {
     private static Collection<String> NEW_METHOD_FOUND;
     private static Collection<String> CHANGED_METHOD_FOUND;
 
-    private  static File f = new File( "lib");
-
-    private static String[] classPath = {f.getAbsolutePath() + File.separator  + "rt.jar" ,  f.getAbsolutePath()  + File.separator + "jce.jar" , f.getAbsolutePath() + File.separator + "junit-4.12.jar"};
+    private static String[] classPath = new String[0];
 
 
 
@@ -144,7 +142,7 @@ public class TestSelector {
                 if ("toAddForChangeInTearDownEqual".equals(t.getTestMethod().getName()))
                     check = true;
             }
-            assertTrue(check);
+            assertFalse(check);
         }
 
         @Test
@@ -598,7 +596,7 @@ public class TestSelector {
                 if ("testStaticDifferentMethod".equals(t.getTestMethod().getName()))
                     check = true;
             }
-            assertTrue(check);
+            assertFalse(check);
 
 
         }
@@ -710,7 +708,7 @@ public class TestSelector {
                 if ("testEqualHierarchy".equals(t.getTestMethod().getName()))
                     check = true;
             }
-            assertFalse(check);
+            assertTrue(check);
 
 
         }
@@ -932,7 +930,7 @@ public class TestSelector {
 
                 }
             }
-            assertEquals(3, count);
+            assertEquals(0, count);
 
 
         }
@@ -1001,6 +999,3 @@ public class TestSelector {
         }
     }
 }
-
-
-

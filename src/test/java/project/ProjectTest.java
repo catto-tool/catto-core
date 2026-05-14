@@ -33,8 +33,7 @@ public class ProjectTest {
     public static final String OUT_PRODUCTION_P ="whatTestProjectForTesting" + File.separator + "out" + File.separator + "production" + File.separator + "p";
     public static final String OUT_PRODUCTION_P_1 = "whatTestProjectForTesting" + File.separator + "out" + File.separator + "production" + File.separator + "p1";;
 
-    private  static File f = new File( "lib");
-    private static String[] classPath = {f.getAbsolutePath() + File.separator  + "rt.jar" ,  f.getAbsolutePath()  + File.separator + "jce.jar" , f.getAbsolutePath() + File.separator + "junit-4.12.jar"};
+    private static String[] classPath = new String[0];
 
     private final String[] targetWithoutTest = {".\\target\\classes"};
 

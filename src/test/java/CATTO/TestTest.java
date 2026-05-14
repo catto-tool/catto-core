@@ -4,10 +4,14 @@ import org.junit.Ignore;
 import soot.SootMethod;
 import CATTO.test.Test;
 
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -55,6 +59,29 @@ public class TestTest {
         Test t = new Test(m);
         Test t1 = new Test(m);
         assertEquals(t.hashCode(), t1.hashCode());
+    }
+
+    @org.junit.Test
+    public void constructorCopiesTestingMethods() {
+        SootMethod m = mock(SootMethod.class);
+        Set<String> coveredMethods = new HashSet<>(Arrays.asList("a.A.foo", "a.A.bar"));
+
+        Test test = new Test(m, coveredMethods);
+        coveredMethods.add("a.A.baz");
+
+        assertTrue(test.getTestingMethods().contains("a.A.foo"));
+        assertTrue(test.getTestingMethods().contains("a.A.bar"));
+        assertFalse(test.getTestingMethods().contains("a.A.baz"));
+    }
+
+    @org.junit.Test
+    public void addTestingMethodRecordsCoveredMethod() {
+        SootMethod m = mock(SootMethod.class);
+        Test test = new Test(m);
+
+        test.addTestingMethod("a.A.foo");
+
+        assertTrue(test.getTestingMethods().contains("a.A.foo"));
     }
 
     @org.junit.Test

@@ -17,7 +17,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public class NewProjectTest {
-    private static String[] classPath = new String[0];
+    private  static File f = new File( "lib");
+
+    private static String[] classPath = {f.getAbsolutePath() + File.separator  + "rt.jar" ,  f.getAbsolutePath()  + File.separator + "jce.jar" , f.getAbsolutePath() + File.separator + "junit-4.12.jar"};
     @Test
     public void noEntryPoints() throws InvocationTargetException, NoSuchMethodException, IllegalAccessException, CATTO.exception.NoTestFoundedException, IOException {
 
@@ -44,7 +46,7 @@ public class NewProjectTest {
                     Assertions.assertAll(
                             () -> {
                                 Assertions.assertEquals(m.getExceptions(), test.getTestMethod().getExceptions());                                             Assertions.assertEquals(m.getReturnType(), test.getTestMethod().getReturnType());
-                                Assertions.assertEquals(m.isPhantom(), test.getTestMethod().isPhantom());
+                                Assertions.assertEquals(m.isPhantom(), test.getTestMethod().isPhantom());                                                     Assertions.assertEquals(m.getNumber(), test.getTestMethod().getNumber());
                                 Assertions.assertEquals(m.getSource(), test.getTestMethod().getSource());                                                     Assertions.assertEquals(m.isDeclared(), test.getTestMethod().isDeclared());
                                 Assertions.assertEquals(m.getActiveBody().toString(), test.getTestMethod().getActiveBody().toString());
 

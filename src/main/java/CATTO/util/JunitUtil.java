@@ -83,8 +83,9 @@ import java.lang.reflect.Modifier;
     private static boolean isJunit4or5TestCase(SootMethod sootMethod) {
 
         for (Tag t : sootMethod.getTags()) {
-            if (checkJunit4or5Condition(t) && t.toString().contains(JUNIT_4_5_TEST_TAG))
-                    return true;
+            if (checkJunit4or5Condition(t) && t.toString().contains(JUNIT_4_5_TEST_TAG)
+                    && !t.toString().contains("TestFactory") && !t.toString().contains("TestTemplate"))
+                return true;
         }
 
         SootMethod inheritedMethod = getInheritedMethod(sootMethod);

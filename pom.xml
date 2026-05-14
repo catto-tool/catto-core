@@ -6,10 +6,12 @@
 
     <groupId>CATTO</groupId>
     <artifactId>CATTO</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
         <sonar.projectName>whatTests</sonar.projectName>
         <sonar.projectKey>whatTests</sonar.projectKey>
         <sonar.sources>src/main</sonar.sources>
@@ -33,6 +35,13 @@
         </dependency>
 
         <dependency>
+            <groupId>jdk</groupId>
+            <artifactId>jrt-fs</artifactId>
+            <version>9.0.4</version>
+        </dependency>
+
+
+        <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>2.13.3</version>
@@ -43,7 +52,7 @@
             <dependency>
                 <groupId>org.soot-oss</groupId>
                 <artifactId>soot</artifactId>
-                <version>4.3.0</version>
+                <version>4.7.1</version>
             </dependency>
 
 
@@ -61,20 +70,17 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/ca.mcgill.sable/soot -->
 
-        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
         <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>2.0.2-beta</version>
-            <scope>compile</scope>
+            <artifactId>mockito-core</artifactId>
+            <version>5.23.0</version>
+            <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <groupId>ch.qos.reload4j</groupId>
+            <artifactId>reload4j</artifactId>
+            <version>1.2.25</version>
             <scope>compile</scope>
-
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.jdom/jdom2 -->
         <dependency>
@@ -90,10 +96,12 @@
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.junit/junit5-engine -->
+
         <dependency>
             <groupId>org.junit</groupId>
             <artifactId>junit5-engine</artifactId>
             <version>5.0.0-ALPHA</version>
+            <scope>runtime</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
@@ -107,7 +115,7 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.8.2</version>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
         <dependency>
@@ -121,8 +129,9 @@
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
             <version>5.8.2</version>
-            <scope>compile</scope>
+            <scope>runtime</scope>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
         <dependency>
             <groupId>commons-cli</groupId>
@@ -153,6 +162,12 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.9.10</version>
+            <scope>compile</scope>
+        </dependency>
 
 
     </dependencies>
@@ -164,28 +179,69 @@
         <pluginManagement>
             <plugins>
 
+
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-assembly-plugin</artifactId>
+                            <version>3.3.0</version>
+                            <configuration>
+                                <archive>
+                                    <manifest>
+                                        <mainClass>CATTO.main.Main</mainClass> <!-- Replace with your main class -->
+                                    </manifest>
+                                </archive>
+                                <descriptorRefs>
+                                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                                </descriptorRefs>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <id>make-assembly</id>
+                                    <phase>package</phase>
+                                    <goals>
+                                        <goal>single</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+
+
                 <plugin>
-                    <artifactId>maven-assembly-plugin</artifactId>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <archive>
-                            <manifest>
-                                <mainClass>CATTO.main.Main</mainClass>
-                            </manifest>
-                        </archive>
-                        <descriptorRefs>
-                            <descriptorRef>jar-with-dependencies</descriptorRef>
-                        </descriptorRefs>
+                        <release>${maven.compiler.release}</release>
+                        <excludes>
+                            <exclude>test/experimental/*.java</exclude>
+                        </excludes>
                     </configuration>
-                    <executions>
-                        <execution>
-                            <id>make-assembly</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>single</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                 </plugin>
+
+
+
+
+<!--                <plugin>-->
+<!--                    <artifactId>maven-assembly-plugin</artifactId>-->
+<!--                    <configuration>-->
+<!--                        <archive>-->
+<!--                            <manifest>-->
+<!--                                <mainClass>CATTO.main.Main</mainClass>-->
+<!--                            </manifest>-->
+<!--                        </archive>-->
+<!--                        <descriptorRefs>-->
+<!--                            <descriptorRef>jar-with-dependencies</descriptorRef>-->
+<!--                        </descriptorRefs>-->
+<!--                    </configuration>-->
+<!--                    <executions>-->
+<!--                        <execution>-->
+<!--                            <id>make-assembly</id>-->
+<!--                            <phase>package</phase>-->
+<!--                            <goals>-->
+<!--                                <goal>single</goal>-->
+<!--                            </goals>-->
+<!--                        </execution>-->
+<!--                    </executions>-->
+<!--                </plugin>-->
 
 
                 <plugin>
@@ -242,8 +298,7 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <source>18</source>
-                        <target>18</target>
+                        <release>${maven.compiler.release}</release>
                         <excludes>
                             <exclude>test/experimental/*.java</exclude>
 
