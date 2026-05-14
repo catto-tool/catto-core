@@ -68,21 +68,19 @@ public class CodeAnalyzer {
     }
 
     private void findDifferenceInHierarchy() {
-        ArrayList<SootMethod> differentHierarchy = new ArrayList<>();
-        ArrayList<SootMethod> deletedMethods = new ArrayList<>();
-        for (SootMethod m : previousProjectVersion.getApplicationMethod()) {
-            boolean isIn = false;
-            for (SootMethod m1 : newProjectVersion.getApplicationMethod()) {
-                if (m.getSignature().equals(m1.getSignature()))
-                    isIn = true;
-            }
-            if (!isIn) {
-                deletedMethods.add(m);
-
-            }
-
+        Set<String> newSignatures = new HashSet<>();
+        for (SootMethod m : newProjectVersion.getApplicationMethod()) {
+            newSignatures.add(m.getSignature());
         }
 
+        List<SootMethod> deletedMethods = new ArrayList<>();
+        for (SootMethod m : previousProjectVersion.getApplicationMethod()) {
+            if (!newSignatures.contains(m.getSignature())) {
+                deletedMethods.add(m);
+            }
+        }
+
+        List<SootMethod> differentHierarchy = new ArrayList<>();
         for (SootMethod deleted : deletedMethods) {
             for (SootClass subClass : previousProjectVersion.getHierarchy().getSubclassesOf(deleted.getDeclaringClass())) {
                 for (SootMethod override : subClass.getMethods()) {
@@ -90,7 +88,6 @@ public class CodeAnalyzer {
                         differentHierarchy.add(override);
                 }
             }
-
             for (SootClass subClass : previousProjectVersion.getHierarchy().getSuperclassesOf(deleted.getDeclaringClass())) {
                 for (SootMethod override : subClass.getMethods()) {
                     if (override.getSubSignature().equals(deleted.getSubSignature()))
@@ -99,61 +96,75 @@ public class CodeAnalyzer {
             }
         }
 
-        for (SootMethod toMarkBecauseCallDeleteMethods : newProjectVersion.getApplicationMethod()) {
-            for (SootMethod methodDifferentInHierarchy : differentHierarchy) {
-
-
-                if (methodDifferentInHierarchy.getSignature().equals(toMarkBecauseCallDeleteMethods.getSignature())) {
-                    LOGGER.info("The method: " + toMarkBecauseCallDeleteMethods.getDeclaringClass().getName() + "." + toMarkBecauseCallDeleteMethods.getName() + " has been marked has modified because the method in his hierarchy " + methodDifferentInHierarchy.getDeclaringClass() + "." + methodDifferentInHierarchy.getName() + " has been deleted");
-                    differentMethods.add(toMarkBecauseCallDeleteMethods);
-                }
-            }
+        Set<String> hierarchySignatures = new HashSet<>();
+        for (SootMethod m : differentHierarchy) {
+            hierarchySignatures.add(m.getSignature());
         }
 
-
+        for (SootMethod newMethod : newProjectVersion.getApplicationMethod()) {
+            if (hierarchySignatures.contains(newMethod.getSignature())) {
+                LOGGER.info("The method: " + newMethod.getDeclaringClass().getName() + "." + newMethod.getName()
+                        + " has been marked as modified because a method in its hierarchy has been deleted");
+                differentMethods.add(newMethod);
+            }
+        }
     }
 
     private void findDifferentMethods() {
-        Date start = new Date();
+        LOGGER.debug("start find different methods");
 
-        LOGGER.debug("start find different methods at " + start.getTime());
-        HashSet<SootClass> p1Class = (HashSet<SootClass>) newProjectVersion.getProjectClasses();
-        HashSet<SootClass> copyPClass = (HashSet<SootClass>) previousProjectVersion.getProjectClasses();
-        for (SootClass s1 : p1Class) {
-            SootClass classToRemove;
-            List<SootClass> pClass = new ArrayList<>(copyPClass);
-            for (SootClass s : pClass) {
-                if (s.getName().equals(s1.getName())) {
-                    classToRemove = s;
-                    List<SootMethod> ms1 = s1.getMethods();
-                    for (SootMethod m1 : ms1) {
-                        if (Modifier.isAbstract(m1.getModifiers())) {
-                            equalsMethods.add(m1);
-                            continue;
-                        }
-//                        // mi assicuro che il metodo che sto confrontando non sia il metodo della classe madre ma quello della classe figlia
-//
-                        for (SootMethod m : s.getMethods()) {
-                            if (haveSameParameter(m, m1) && m.getName().equals(m1.getName())) {
-                                if (!isEquals(m, m1)) {
+        Map<String, SootClass> prevClassByName = new HashMap<>();
+        for (SootClass s : previousProjectVersion.getProjectClasses()) {
+            prevClassByName.put(s.getName(), s);
+        }
 
-                                    differentMethods.add(m1);
-                                } else
-                                    equalsMethods.add(m1);
-
-                                break;
-                            }
-                        }
-                    }
-                    copyPClass.remove(classToRemove);
-                    break;
-                }
+        for (SootClass newClass : newProjectVersion.getProjectClasses()) {
+            SootClass prevClass = prevClassByName.get(newClass.getName());
+            if (prevClass == null) {
+                continue;
             }
 
-        }
-        start = new Date();
-        LOGGER.debug("finish find different methods at " + start.getTime());
+            if (classFileUnchanged(newClass, prevClass)) {
+                equalsMethods.addAll(newClass.getMethods());
+                continue;
+            }
 
+            Map<String, SootMethod> prevMethodBySubSig = new HashMap<>();
+            for (SootMethod m : prevClass.getMethods()) {
+                prevMethodBySubSig.put(m.getSubSignature(), m);
+            }
+
+            for (SootMethod newMethod : newClass.getMethods()) {
+                if (Modifier.isAbstract(newMethod.getModifiers())) {
+                    equalsMethods.add(newMethod);
+                    continue;
+                }
+                SootMethod prevMethod = prevMethodBySubSig.get(newMethod.getSubSignature());
+                if (prevMethod != null) {
+                    if (!isEquals(prevMethod, newMethod)) {
+                        differentMethods.add(newMethod);
+                    } else {
+                        equalsMethods.add(newMethod);
+                    }
+                }
+            }
+        }
+
+        LOGGER.debug("finish find different methods");
+    }
+
+    private boolean classFileUnchanged(SootClass newClass, SootClass prevClass) {
+        Optional<Path> newFile = findClassFile(newProjectVersion, newClass);
+        Optional<Path> prevFile = findClassFile(previousProjectVersion, prevClass);
+        if (newFile.isEmpty() || prevFile.isEmpty()) {
+            return false;
+        }
+        try {
+            return Arrays.equals(Files.readAllBytes(newFile.get()), Files.readAllBytes(prevFile.get()));
+        } catch (IOException e) {
+            LOGGER.warn("Cannot compare class files for " + newClass.getName(), e);
+            return false;
+        }
     }
 
 
