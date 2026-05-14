@@ -16,8 +16,10 @@ import soot.jimple.toolkits.callgraph.CallGraph;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.file.Path;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
@@ -87,8 +89,19 @@ public final class CattoAnalyzer {
                 new HashSet<>(codeAnalyzer.getChangedMethods()),
                 new HashSet<>(codeAnalyzer.getStringNewMethods()),
                 toMethodNameSet(codeAnalyzer.getRemovedTests()),
+                toSelectionReasons(selected),
                 cacheUsed
         );
+    }
+
+    private static Map<String, Set<String>> toSelectionReasons(Set<Test> tests) {
+        Map<String, Set<String>> reasons = new HashMap<>();
+        for (Test t : tests) {
+            SootMethod m = t.getTestMethod();
+            String name = m.getDeclaringClass().getName() + "#" + m.getName();
+            reasons.put(name, new HashSet<>(t.getTestingMethods()));
+        }
+        return reasons;
     }
 
     private static Set<String> toTestNameSet(Set<Test> tests) {

@@ -221,11 +221,15 @@ final class FixtureAnalysisSupport {
         }
 
         Map<String, Set<String>> selectedTestingMethods() {
-            Map<String, Set<String>> tests = new HashMap<>();
+            return selectionReasons();
+        }
+
+        Map<String, Set<String>> selectionReasons() {
+            Map<String, Set<String>> reasons = new HashMap<>();
             for (Test test : selectedTests) {
-                tests.put(testName(test.getTestMethod()), new HashSet<>(test.getTestingMethods()));
+                reasons.put(testName(test.getTestMethod()), new HashSet<>(test.getTestingMethods()));
             }
-            return tests;
+            return reasons;
         }
 
         private static String testName(SootMethod sootMethod) {
