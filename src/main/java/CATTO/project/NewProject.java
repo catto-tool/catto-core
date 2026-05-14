@@ -61,7 +61,42 @@ public class NewProject extends Project {
 
         if (getEntryPoints().isEmpty())
             throw new NoTestFoundedException();
+
+        // Allocation stub: news up every concrete app class so RTA sees them as instantiated.
+        // Fixes DI-injected fields whose concrete implementation is never new-ed in test code.
+        SootMethod allocationStub = createAllocationStub();
+        getEntryPoints().add(allocationStub);
+
         Scene.v().setEntryPoints(new ArrayList<>(getEntryPoints()));
+    }
+
+    private SootMethod createAllocationStub() {
+        SootClass stubHolder = new SootClass("catto.DiAllocationStub");
+        SootMethod stub = new SootMethod("forceAllocate", null, VoidType.v(),
+                Modifier.PUBLIC | Modifier.STATIC);
+        JimpleBody body = Jimple.v().newBody(stub);
+
+        int idx = 0;
+        for (SootClass cls : new ArrayList<>(Scene.v().getApplicationClasses())) {
+            if (Modifier.isAbstract(cls.getModifiers()) || Modifier.isInterface(cls.getModifiers()))
+                continue;
+            Local local = new JimpleLocal("alloc" + idx++, RefType.v(cls.getName()));
+            body.getLocals().add(local);
+            body.getUnits().add(Jimple.v().newAssignStmt(local, new JNewExpr(RefType.v(cls.getName()))));
+            try {
+                SootMethod init = cls.getMethod("<init>", Collections.emptyList());
+                body.getUnits().add(Jimple.v().newInvokeStmt(
+                        Jimple.v().newSpecialInvokeExpr(local, init.makeRef())));
+            } catch (RuntimeException ignored) {
+                // no no-arg constructor — allocation alone still marks type as instantiated for RTA
+            }
+        }
+
+        body.getUnits().add(Jimple.v().newReturnVoidStmt());
+        stub.setActiveBody(body);
+        stubHolder.addMethod(stub);
+        Scene.v().addClass(stubHolder);
+        return stub;
     }
 
 
