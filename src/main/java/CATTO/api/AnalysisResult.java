@@ -14,7 +14,7 @@ public final class AnalysisResult {
     private final Status status;
     private final boolean callGraphFromCache;
 
-    AnalysisResult(Set<String> selectedTests, Set<String> changedMethods,
+    public AnalysisResult(Set<String> selectedTests, Set<String> changedMethods,
                    Set<String> newMethods, Set<String> removedTests, boolean callGraphFromCache) {
         this.selectedTests = Collections.unmodifiableSet(new TreeSet<>(selectedTests));
         this.changedMethods = Collections.unmodifiableSet(new TreeSet<>(changedMethods));

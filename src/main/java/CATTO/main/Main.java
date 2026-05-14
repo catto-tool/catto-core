@@ -3,6 +3,7 @@ package CATTO.main;
 import CATTO.api.AnalysisRequest;
 import CATTO.api.AnalysisResult;
 import CATTO.api.CattoAnalyzer;
+import CATTO.cli.ResultSerializer;
 import CATTO.config.ConfigWrapper;
 import CATTO.config.Configurator;
 import CATTO.exception.InvalidTargetPaths;
@@ -75,6 +76,11 @@ public class Main {
             for (String testName : result.selectedTests()) {
                 writer.write(testName + "\n");
             }
+        }
+
+        File jsonFile = projectPath.resolve("identified_tests.json").toFile();
+        try (FileWriter writer = new FileWriter(jsonFile)) {
+            writer.write(ResultSerializer.toJson(result));
         }
 
         return result.exitCode();
