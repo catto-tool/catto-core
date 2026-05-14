@@ -4,6 +4,8 @@ import CATTO.api.AnalysisRequest;
 import CATTO.api.AnalysisResult;
 import CATTO.api.CattoAnalyzer;
 import CATTO.cli.ResultSerializer;
+import CATTO.config.ConfigValidationException;
+import CATTO.config.ConfigValidator;
 import CATTO.config.ConfigWrapper;
 import CATTO.config.Configurator;
 import CATTO.exception.InvalidTargetPaths;
@@ -25,11 +27,11 @@ import java.util.List;
 public class Main {
     private static final String IDENTIFIED_TESTS_FILE = "identified_tests.txt";
 
-    public static void main(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+    public static void main(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, ConfigValidationException {
         System.exit(run(args));
     }
 
-    public static int run(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+    public static int run(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, ConfigValidationException {
         if (args.length == 0) {
             throw new IllegalArgumentException("Missing project path argument");
         }
@@ -39,6 +41,9 @@ public class Main {
         Path projectPath = Paths.get(args[0]).toAbsolutePath().normalize();
         ConfigWrapper ini = new ConfigWrapper(projectPath.toString());
         Configurator configurator = ini.getCONFIG();
+
+        ConfigValidator.validate(projectPath, configurator);
+
         String tempFolder = configurator.getTempFolderPath();
         List<String> dependencies = configurator.getDependencies() == null ? Collections.emptyList() : configurator.getDependencies();
         List<String> outputPaths = configurator.getOutputPath() == null ? Collections.emptyList() : configurator.getOutputPath();
@@ -86,7 +91,7 @@ public class Main {
         return result.exitCode();
     }
 
-    static Path resolveConfiguredPath(Path projectPath, String path) {
+    public static Path resolveConfiguredPath(Path projectPath, String path) {
         Path configuredPath = Paths.get(path);
         if (configuredPath.isAbsolute()) {
             return configuredPath.normalize();
