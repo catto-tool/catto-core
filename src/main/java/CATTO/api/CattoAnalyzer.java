@@ -3,6 +3,7 @@ package CATTO.api;
 import CATTO.cache.CallGraphCacheStore;
 import CATTO.cache.StructuralFingerprintComputer;
 import CATTO.code.analyzer.CodeAnalyzer;
+import CATTO.exception.AnalysisTimeoutException;
 import CATTO.exception.InvalidTargetPaths;
 import CATTO.exception.NoTestFoundedException;
 import CATTO.project.NewProject;
@@ -22,6 +23,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 public final class CattoAnalyzer {
 
@@ -30,6 +37,39 @@ public final class CattoAnalyzer {
     private CattoAnalyzer() {}
 
     public static AnalysisResult analyze(AnalysisRequest request)
+            throws IOException, InvocationTargetException, NoSuchMethodException,
+            IllegalAccessException, InvalidTargetPaths, NoTestFoundedException, AnalysisTimeoutException {
+
+        Optional<Long> timeout = request.analysisTimeoutSeconds();
+        if (timeout.isEmpty()) {
+            return doAnalyze(request);
+        }
+
+        long timeoutSeconds = timeout.get();
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        Future<AnalysisResult> future = executor.submit(() -> doAnalyze(request));
+        executor.shutdown();
+        try {
+            return future.get(timeoutSeconds, TimeUnit.SECONDS);
+        } catch (TimeoutException e) {
+            future.cancel(true);
+            throw new AnalysisTimeoutException(timeoutSeconds);
+        } catch (ExecutionException e) {
+            Throwable cause = e.getCause();
+            if (cause instanceof IOException)               throw (IOException) cause;
+            if (cause instanceof InvocationTargetException) throw (InvocationTargetException) cause;
+            if (cause instanceof NoSuchMethodException)     throw (NoSuchMethodException) cause;
+            if (cause instanceof IllegalAccessException)    throw (IllegalAccessException) cause;
+            if (cause instanceof InvalidTargetPaths)        throw (InvalidTargetPaths) cause;
+            if (cause instanceof NoTestFoundedException)    throw (NoTestFoundedException) cause;
+            throw new RuntimeException("Unexpected exception during analysis", cause);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Analysis interrupted", e);
+        }
+    }
+
+    private static AnalysisResult doAnalyze(AnalysisRequest request)
             throws IOException, InvocationTargetException, NoSuchMethodException,
             IllegalAccessException, InvalidTargetPaths, NoTestFoundedException {
 

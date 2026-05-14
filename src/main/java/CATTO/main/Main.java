@@ -8,6 +8,7 @@ import CATTO.config.ConfigValidationException;
 import CATTO.config.ConfigValidator;
 import CATTO.config.ConfigWrapper;
 import CATTO.config.Configurator;
+import CATTO.exception.AnalysisTimeoutException;
 import CATTO.exception.InvalidTargetPaths;
 import CATTO.exception.NoTestFoundedException;
 import org.apache.commons.io.FileUtils;
@@ -27,11 +28,11 @@ import java.util.List;
 public class Main {
     private static final String IDENTIFIED_TESTS_FILE = "identified_tests.txt";
 
-    public static void main(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, ConfigValidationException {
+    public static void main(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, ConfigValidationException, AnalysisTimeoutException {
         System.exit(run(args));
     }
 
-    public static int run(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, ConfigValidationException {
+    public static int run(String[] args) throws InvalidTargetPaths, NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, ConfigValidationException, AnalysisTimeoutException {
         if (args.length == 0) {
             throw new IllegalArgumentException("Missing project path argument");
         }

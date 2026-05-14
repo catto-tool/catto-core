@@ -12,6 +12,7 @@ public final class AnalysisRequest {
     private final List<Path> newClassesPaths;
     private final List<Path> dependencies;
     private final Path callGraphCacheDirectory;
+    private final Long analysisTimeoutSeconds;
 
     private AnalysisRequest(Builder builder) {
         if (builder.previousClassesPaths.isEmpty()) {
@@ -21,6 +22,7 @@ public final class AnalysisRequest {
         this.newClassesPaths = Collections.unmodifiableList(new ArrayList<>(builder.newClassesPaths));
         this.dependencies = Collections.unmodifiableList(new ArrayList<>(builder.dependencies));
         this.callGraphCacheDirectory = builder.callGraphCacheDirectory;
+        this.analysisTimeoutSeconds = builder.analysisTimeoutSeconds;
     }
 
     /** Returns all previous-version class directories (one per module in multi-module projects). */
@@ -33,6 +35,9 @@ public final class AnalysisRequest {
     public List<Path> dependencies() { return dependencies; }
     public Optional<Path> callGraphCacheDirectory() { return Optional.ofNullable(callGraphCacheDirectory); }
 
+    /** Returns the configured timeout in seconds, or empty if no timeout is set. */
+    public Optional<Long> analysisTimeoutSeconds() { return Optional.ofNullable(analysisTimeoutSeconds); }
+
     public static Builder builder() { return new Builder(); }
 
     public static final class Builder {
@@ -40,6 +45,7 @@ public final class AnalysisRequest {
         private final List<Path> newClassesPaths = new ArrayList<>();
         private final List<Path> dependencies = new ArrayList<>();
         private Path callGraphCacheDirectory;
+        private Long analysisTimeoutSeconds;
 
         private Builder() {}
 
@@ -78,6 +84,12 @@ public final class AnalysisRequest {
 
         public Builder callGraphCacheDirectory(Path dir) {
             this.callGraphCacheDirectory = dir;
+            return this;
+        }
+
+        /** Sets the maximum time in seconds the analysis may run. No timeout if not set. */
+        public Builder analysisTimeoutSeconds(long seconds) {
+            this.analysisTimeoutSeconds = seconds;
             return this;
         }
 
