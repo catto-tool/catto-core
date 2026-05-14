@@ -28,6 +28,21 @@ public class NewProject extends Project {
 
     }
 
+    /**
+     * Constructor that injects a pre-built call graph, skipping Spark RTA construction.
+     * Used when the structural fingerprint of the new project matches a cached fingerprint.
+     */
+    public NewProject(String[] classPath, CallGraph prebuiltCallGraph, @Nonnull String... target) throws NoTestFoundedException, IOException, InvocationTargetException, NoSuchMethodException, InvalidTargetPaths, IllegalAccessException {
+
+        super(classPath, target);
+
+        hierarchy = Scene.v().getActiveHierarchy();
+        createEntryPoints(getMoved());
+        setCallGraph(prebuiltCallGraph);
+        Scene.v().setCallGraph(prebuiltCallGraph);
+
+    }
+
     /*
      * Set all test-methods of the project as entry point for soot.
      */
